@@ -8,8 +8,8 @@ arXiv: https://arxiv.org/abs/2007.13124
 ## Car mesh models
 [car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): The 79 types of ground truth car meshes with the same topology (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
 
-The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a more detailed description.
+The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a more detailed description on the car id and car type correspondance.
 
-merge_mean_car_shape: The four shape basis obtained by four independent PCA models.
+[merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The four shape basis obtained by four independent PCA models.
 
 ![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
