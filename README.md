@@ -14,7 +14,9 @@ We present a novel end-to-end framework named as **GSNet** (Geometric and Scene-
 
 The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a detailed description on the car id and car type correspondance.
 
-[merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The four shape basis used by the four independent PCA models.
+[merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The mean car shape of the four shape basis used by four independent PCA models.
+
+[pca_components](https://github.com/lkeab/gsnet/blob/master/pca_components): The learned weights of the four PCA models.
 
 ![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
 
