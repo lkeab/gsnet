@@ -11,7 +11,7 @@ We present a novel end-to-end framework named as GSNet (Geometric and Scene-awar
 ## Car mesh models
 [car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): The 79 types of ground truth car meshes with the **same topology** (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
 
-The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a more detailed description on the car id and car type correspondance.
+The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a detailed description on the car id and car type correspondance.
 
 [merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The four shape basis obtained by four independent PCA models.
 
