@@ -6,7 +6,7 @@ arXiv: https://arxiv.org/abs/2007.13124
 ![Image of GSNet framework](https://github.com/lkeab/gsnet/blob/master/images/framework.png)
 
 ## Car mesh models
-[car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): The 79 types of ground truth car meshes with the same topology (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
+[car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): The 79 types of ground truth car meshes with the **same topology** (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
 
 The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a more detailed description on the car id and car type correspondance.
 
