@@ -18,4 +18,4 @@ The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_r
 ![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
 
 ## Installation
-We build GSNet based on the [Detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) developed by FAIR. Please first follow its [readme file](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
+We build GSNet based on the [Detectron2](https://github.com/facebookresearch/detectron2/) developed by FAIR. Please first follow its [readme file](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
