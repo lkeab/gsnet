@@ -2,6 +2,7 @@
 Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision" (coming soon).
 
 arXiv: https://arxiv.org/abs/2007.13124
+
 Paper: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600511.pdf
 
 project page: http://lkeab.github.io/gsnet/
