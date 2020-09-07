@@ -26,3 +26,21 @@ The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_r
 
 ## Installation
 We build GSNet based on the [Detectron2](https://github.com/facebookresearch/detectron2/) developed by FAIR. Please first follow its [readme file](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md).
+
+## Environment
+- Python 3.6
+- Numpy 1.16
+- PyTorch >= 1.0.1
+- CUDA 9/10
+- Softras
+- Pyrender
+
+## Citation
+Please star this repository and cite the following paper in your publications if it helps your research:
+
+    @InProceedings{Li_2020_CVPR,
+    author = {Ke, Lei and Li, Shichao and Sun, Yanan and Tai, Yu-Wing and Tang, Chi-Keung},
+    title = {GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision},
+    booktitle = {The European Conference on Computer Vision (ECCV)},
+    year = {2020}
+    }
