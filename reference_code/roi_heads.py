@@ -47,14 +47,14 @@ def smooth_l1_loss(pred, targets, beta=2.8):
 
     dis_trans = torch.norm(diff, dim=1)
 
-    inbox_idx = torch.tensor(dis_trans <= 2.8, dtype=torch.float32).cuda()
-    outbox_idx = torch.tensor(dis_trans > 2.8, dtype=torch.float32).cuda()
+    in_idx = torch.tensor(dis_trans <= 2.8, dtype=torch.float32).cuda()
+    out_idx = torch.tensor(dis_trans > 2.8, dtype=torch.float32).cuda()
 
     in_pow_diff = 0.5 * torch.pow(diff, 2) / beta
-    in_loss = in_pow_diff.sum(dim=1) * inbox_idx
+    in_loss = in_pow_diff.sum(dim=1) * in_idx
 
     out_abs_diff = torch.abs(diff)
-    out_loss = (out_abs_diff.sum(dim=1) - beta / 2) * outbox_idx
+    out_loss = (out_abs_diff.sum(dim=1) - beta / 2) * out_idx
 
     loss = in_loss + out_loss
     N = loss.size(0)
