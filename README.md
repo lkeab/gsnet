@@ -38,7 +38,7 @@ We build GSNet based on the [Detectron2](https://github.com/facebookresearch/det
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
 
-    @InProceedings{Li_2020_CVPR,
+    @InProceedings{Ke_2020_ECCV,
     author = {Ke, Lei and Li, Shichao and Sun, Yanan and Tai, Yu-Wing and Tang, Chi-Keung},
     title = {GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision},
     booktitle = {The European Conference on Computer Vision (ECCV)},
