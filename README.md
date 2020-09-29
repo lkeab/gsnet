@@ -1,5 +1,5 @@
 # GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision
-Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision" (coming soon).
+Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision" (under construction).
 
 arXiv: https://arxiv.org/abs/2007.13124
 
@@ -39,6 +39,9 @@ python -m pip install detectron2 -f \
 - CUDA 9/10
 - Softras
 - Pyrender
+
+## Run
+Go to [readme](https://github.com/lkeab/gsnet/blob/master/reference_code/GSNet-release/README.md)
 
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
