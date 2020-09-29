@@ -41,7 +41,7 @@ python -m pip install detectron2 -f \
 - Pyrender
 
 ## Run
-Go to [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release)
+Go to [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page
 
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
