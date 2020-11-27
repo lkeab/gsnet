@@ -18,7 +18,7 @@ The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_r
 
 ![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
 
-**How to use our car mesh models?** Please refer to the [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
+**How to use our car mesh models?** Please refer to the class StandardROIHeads in [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
 
 ## Installation
 We build GSNet based on the [Detectron2](https://github.com/facebookresearch/detectron2/) developed by FAIR. Please first follow its [readme file](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md). We recommend the Pre-Built Detectron2 (Linux only) version with pytorch 1.5 by the following command:
@@ -33,11 +33,11 @@ python -m pip install detectron2 -f \
 - Numpy 1.16
 - PyTorch >= 1.0.1
 - CUDA 9/10
-- Softras
-- Pyrender
+- [Softras](https://github.com/ShichenLiu/SoftRas)
+- [Pyrender](https://github.com/mmatl/pyrender)
 
 ## Run
-Follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page.
+Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page.
 
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
