@@ -7,7 +7,7 @@ bash run.sh
 [Google drive link](https://drive.google.com/file/d/1H2QtfmEl5XeqwYH-kz8phs77BsQGZaku/view?usp=sharing) and put the downloaded beta-version model in the output directory.
 
 ## For quantitative evaluation
-please using code provided in https://github.com/ApolloScapeAuto/dataset-api/tree/master/car_instance, and modify the Line628 of the `ROI_head.py` to:
+please using code provided in https://github.com/ApolloScapeAuto/dataset-api/tree/master/car_instance, and modify the Line628 of the `roi_heads.py` to:
 
 ```
 self.test_score_thresh = 0.2
