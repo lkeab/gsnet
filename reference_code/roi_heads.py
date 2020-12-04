@@ -47,14 +47,14 @@ def smooth_l1_loss(pred, targets, beta=2.8):
 
     dis_trans = torch.norm(diff, dim=1)
 
-    in_idx = torch.tensor(dis_trans <= 2.8, dtype=torch.float32).cuda()
-    out_idx = torch.tensor(dis_trans > 2.8, dtype=torch.float32).cuda()
+    inbox_idx = torch.tensor(dis_trans <= 2.8, dtype=torch.float32).cuda()
+    outbox_idx = torch.tensor(dis_trans > 2.8, dtype=torch.float32).cuda()
 
     in_pow_diff = 0.5 * torch.pow(diff, 2) / beta
-    in_loss = in_pow_diff.sum(dim=1) * in_idx
+    in_loss = in_pow_diff.sum(dim=1) * inbox_idx
 
     out_abs_diff = torch.abs(diff)
-    out_loss = (out_abs_diff.sum(dim=1) - beta / 2) * out_idx
+    out_loss = (out_abs_diff.sum(dim=1) - beta / 2) * outbox_idx
 
     loss = in_loss + out_loss
     N = loss.size(0)
@@ -544,10 +544,10 @@ class StandardROIHeads(ROIHeads):
  
         self.intrinsic = torch.tensor(np.load('./camera_intrinsic/camera_intrinsic.npy'), requires_grad=False).cuda()
  
-        print('mesh 0 vertices:', self.mesh_0_vertices)
-        print('mesh 0 vertices:', self.mesh_0_vertices.shape)
-        print('eigen base 0:', self.eigen_basis_0)
-        print('eigen base 0:', self.eigen_basis_0.shape)
+        #print('mesh 0 vertices:', self.mesh_0_vertices)
+        #print('mesh 0 vertices:', self.mesh_0_vertices.shape)
+        #print('eigen base 0:', self.eigen_basis_0)
+        #print('eigen base 0:', self.eigen_basis_0.shape)
 
     def forward(self, images, features, proposals, curr_iter, targets=None):
         """
@@ -624,6 +624,9 @@ class StandardROIHeads(ROIHeads):
 
         # start inference 
         if not self.training:
+            self.test_score_thresh = 0.3
+            #self.test_nms_thresh = 0.5
+
             pred_instances, _indexes = outputs.inference(
                 self.test_score_thresh, self.test_nms_thresh, self.test_detections_per_img
             )
@@ -635,6 +638,7 @@ class StandardROIHeads(ROIHeads):
             pred_boxes = [x.pred_boxes for x in pred_instances]
             keypoint_features = self.keypoint_pooler(features, pred_boxes)
             selected_keypoint_logits_heatmap = self.keypoint_head(keypoint_features)
+            #print('select keypoint logits shape:', selected_keypoint_logits_heatmap.shape)
             selected_keypoint_res = keypoint_rcnn_inference(selected_keypoint_logits_heatmap, pred_instances)
 
             return pred_instances, selected_boxes, selected_roi_features, selected_keypoint_logits_heatmap, selected_keypoint_res
