@@ -28,6 +28,10 @@ python -m pip install detectron2 -f \
   https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.5/index.html
 ```
 
+## Dataset Preparation
+The ApolloCar3D dataset is detailed in paper [ApolloCar3D](https://openaccess.thecvf.com/content_CVPR_2019/papers/Song_ApolloCar3D_A_Large_3D_Car_Instance_Understanding_Benchmark_for_Autonomous_CVPR_2019_paper.pdf) and the corresponding images can be obtained from [link](http://apolloscape.auto/car_instance.html).
+We provide our converted car meshes, kpts, bounding box, 3d pose annotations etc. in the [car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/) and [datasets/apollo/annotations](https://github.com/lkeab/gsnet/blob/master/datasets/apollo/annotations/).
+
 ## Environment
 - Python 3.6
 - Numpy 1.16
@@ -48,3 +52,6 @@ Please star this repository and cite the following paper in your publications if
     booktitle = {The European Conference on Computer Vision (ECCV)},
     year = {2020}
     }
+
+## Citation
+A MIT license is used for this repository. However, certain third-party datasets, such as (ApolloCar3D), are subject to their respective licenses and may not grant commercial use.
