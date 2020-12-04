@@ -53,5 +53,5 @@ Please star this repository and cite the following paper in your publications if
     year = {2020}
     }
 
-## Citation
+## License
 A MIT license is used for this repository. However, certain third-party datasets, such as (ApolloCar3D), are subject to their respective licenses and may not grant commercial use.
