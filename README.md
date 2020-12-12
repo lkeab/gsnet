@@ -49,7 +49,7 @@ Please star this repository and cite the following paper in your publications if
     @InProceedings{Ke_2020_ECCV,
     author = {Ke, Lei and Li, Shichao and Sun, Yanan and Tai, Yu-Wing and Tang, Chi-Keung},
     title = {GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision},
-    booktitle = {The European Conference on Computer Vision (ECCV)},
+    booktitle = {European Conference on Computer Vision (ECCV)},
     year = {2020}
     }
 
