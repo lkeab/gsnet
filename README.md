@@ -40,7 +40,7 @@ We provide our converted car meshes (same topology), kpts, bounding box, 3d pose
 - [Softras](https://github.com/ShichenLiu/SoftRas)
 - [Pyrender](https://github.com/mmatl/pyrender)
 
-## Run
+## Usage
 Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page.
 
 ## Citation
