@@ -4,7 +4,7 @@ Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Veh
 ### [[arXiv](https://arxiv.org/abs/2007.13124)]|[[Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600511.pdf)]|[[Project Page](http://lkeab.github.io/gsnet/)]
 
 <p align='center'>
-![Image of GSNet framework](https://github.com/lkeab/gsnet/blob/master/images/framework.png)
+<img src='https://github.com/lkeab/gsnet/blob/master/images/framework.png' width='900'/>
 </p>
 
 ## Abstract
