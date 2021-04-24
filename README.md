@@ -47,7 +47,7 @@ We provide our converted car meshes (same topology), kpts, bounding box, 3d pose
 - [Pyrender](https://github.com/mmatl/pyrender)
 
 ## Run GSNet
-Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page.
+Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page (including the pretrained model).
 
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
