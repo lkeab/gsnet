@@ -33,8 +33,8 @@ Results on ApolloCar3D
 |----------|--------|-----------|
 | DeepMANTA (CVPR'17) | 16.04 | 20.1 |
 | 3D-RCNN (CVPR'18) | 10.79 | 16.44 |
-| Kpt-based(CVPR'19) | 16.53 | 20.4 |
-| Direct-based(CVPR'19) | 11.49 | 15.15 |
+| Kpt-based (CVPR'19) | 16.53 | 20.4 |
+| Direct-based (CVPR'19) | 11.49 | 15.15 |
 | GSNet (ECCV'20) | 20.21 | 18.91 |
 
 
