@@ -26,7 +26,7 @@ The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_r
 
 **How to use our car mesh models?** Please refer to the `class StandardROIHeads` in [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
 
-Results on ApolloCar3D
+Results on ApolloCar3D benchmark
 ----------
 (Check Table 3 of the paper for full results)
 | Method  | A3DP-Rel-mean | A3DP-Abs-mean |
