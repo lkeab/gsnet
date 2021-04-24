@@ -26,6 +26,18 @@ The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_r
 
 **How to use our car mesh models?** Please refer to the `class StandardROIHeads` in [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
 
+Results on ApolloCar3D
+----------
+(Check Table 3 of the paper for full results)
+| Method  | A3DP-Rel-mean | A3DP-Abs-mean |
+|----------|--------|-----------|
+| DeepMANTA (CVPR'17) | 16.04 | 20.1 |
+| 3D-RCNN (CVPR'18) | 10.79 | 16.44 |
+| Kpt-based(CVPR'19) | 16.53 | 20.4 |
+| Direct-based(CVPR'19) | 11.49 | 15.15 |
+| GSNet (ECCV'20) | 20.21 | 18.91 |
+
+
 ## Installation
 We build GSNet based on the [Detectron2](https://github.com/facebookresearch/detectron2/) developed by FAIR. Please first follow its [readme file](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md). We recommend the Pre-Built Detectron2 (Linux only) version with pytorch 1.5 by the following command:
 
