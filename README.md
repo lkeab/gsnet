@@ -35,7 +35,7 @@ Results on ApolloCar3D
 | 3D-RCNN (CVPR'18) | 10.79 | 16.44 |
 | Kpt-based (CVPR'19) | 16.53 | 20.4 |
 | Direct-based (CVPR'19) | 11.49 | 15.15 |
-| **GSNet (ECCV'20)** | **20.21** | **18.91 **|
+| **GSNet (ECCV'20)** | **20.21** | **18.91**|
 
 
 ## Installation
