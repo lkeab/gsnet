@@ -13,19 +13,6 @@ Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Veh
 ## Abstract
 We present a novel end-to-end framework named as **GSNet** (Geometric and Scene-aware Network), which **jointly** estimates 6DoF poses and reconstructs detailed 3D car shapes from single urban street view. GSNet utilizes a unique four-way feature extraction and fusion scheme and directly regresses 6DoF vehicle poses and shapes in a single forward pass. Extensive experiments show that our diverse feature extraction and fusion scheme can greatly improve model performance. Based on a divide-and-conquer 3D shape representation strategy, GSNet reconstructs 3D vehicle shape with great detail (1352 vertices and 2700 faces). This dense mesh representation further leads us to consider geometrical consistency and scene context, and inspires a new multi-objective loss function to regularize network training, which in turn improves the accuracy of 6D pose estimation and validates the merit of jointly performing both tasks. 
 
-## Using Our Car mesh models
-[car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): We provide 79 types of ground truth car meshes with the **same topology** (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
-
-The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a detailed description on the car id and car type correspondance.
-
-[merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The mean car shape of the four shape basis used by four independent PCA models.
-
-[pca_components](https://github.com/lkeab/gsnet/blob/master/pca_components): The learned weights of the four PCA models.
-
-![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
-
-**How to use our car mesh models?** Please refer to the `class StandardROIHeads` in [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
-
 Results on ApolloCar3D benchmark
 ----------
 (Check Table 3 of the paper for full results)
@@ -57,6 +44,19 @@ We provide our converted car meshes (same topology), kpts, bounding box, 3d pose
 - CUDA 9/10
 - [Softras](https://github.com/ShichenLiu/SoftRas)
 - [Pyrender](https://github.com/mmatl/pyrender)
+
+## Using Our Car mesh models
+[car_deform_result](https://github.com/lkeab/gsnet/blob/master/car_deform_result/): We provide 79 types of ground truth car meshes with the **same topology** (1352 vertices and 2700 faces) converted using SoftRas (https://github.com/ShichenLiu/SoftRas) 
+
+The file [car_models.py](https://github.com/lkeab/gsnet/blob/master/car_deform_result/car_models.py) has a detailed description on the car id and car type correspondance.
+
+[merge_mean_car_shape](https://github.com/lkeab/gsnet/blob/master/merge_mean_car_shape/): The mean car shape of the four shape basis used by four independent PCA models.
+
+[pca_components](https://github.com/lkeab/gsnet/blob/master/pca_components): The learned weights of the four PCA models.
+
+![Image of GSNet shape reconstruction](https://github.com/lkeab/gsnet/blob/master/images/shape_reconstruction.png)
+
+**How to use our car mesh models?** Please refer to the `class StandardROIHeads` in [roi_heads.py](https://github.com/lkeab/gsnet/blob/master/reference_code/roi_heads.py), which contains the core inference code for ROI head of GSNet. It relies on the [SoftRas](https://github.com/ShichenLiu/SoftRas) to load and manipulate the car meshes.
 
 ## Run GSNet
 Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_code/GSNet-release) page (including the pretrained model).
