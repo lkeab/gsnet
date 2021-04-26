@@ -2,7 +2,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gsnet-joint-vehicle-pose-and-shape/3d-shape-reconstruction-on-apollocar3d)](https://paperswithcode.com/sota/3d-shape-reconstruction-on-apollocar3d?p=gsnet-joint-vehicle-pose-and-shape)
 
 # GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision
-Relevant code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision".
+Code and 3D car mesh models for the *ECCV 2020 paper* "GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision".
+GSNet performs joint vehicle pose estimation and vehicle shape reconstruction with single RGB image as input.
 
 ### [[arXiv](https://arxiv.org/abs/2007.13124)]|[[Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600511.pdf)]|[[Project Page](http://lkeab.github.io/gsnet/)]
 
