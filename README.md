@@ -74,7 +74,7 @@ Please star this repository and cite the following paper in your publications if
 
 Related repo based on detectron2: [BCNet, CVPR'21](https://github.com/lkeab/BCNet)- a bilayer instance segmentation method
 
-Related work reading: [Exploring intermediate representation for monocular vehicle pose estimation, CVPR'21](https://arxiv.org/abs/2011.08464)
+Related work reading: [EgoNet, CVPR'21](https://arxiv.org/abs/2011.08464)
 
 ## License
 A MIT license is used for this repository. However, certain third-party datasets, such as (ApolloCar3D), are subject to their respective licenses and may not grant commercial use.
