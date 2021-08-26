@@ -65,7 +65,7 @@ Please follow the [readme](https://github.com/lkeab/gsnet/tree/master/reference_
 ## Citation
 Please star this repository and cite the following paper in your publications if it helps your research:
 
-    @InProceedings{Ke_2020_ECCV,
+    @InProceedings{gsnet2020ke,
         author = {Ke, Lei and Li, Shichao and Sun, Yanan and Tai, Yu-Wing and Tang, Chi-Keung},
         title = {GSNet: Joint Vehicle Pose and Shape Reconstruction with Geometrical and Scene-aware Supervision},
         booktitle = {European Conference on Computer Vision (ECCV)},
